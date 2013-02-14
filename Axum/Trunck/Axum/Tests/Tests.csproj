@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4D5FACE8-CB29-4CEC-AECC-460A1B4C0708}</ProjectGuid>
+    <ProjectGuid>{72CCEE52-F605-4124-8C6B-09544E28577A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Axum</RootNamespace>
-    <AssemblyName>Axum</AssemblyName>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -30,23 +30,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Io\buffer\Unpooled.cs" />
+    <Compile Include="Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ProjectExtensions>
-    <MonoDevelop>
-      <Properties>
-        <Policies>
-          <DotNetNamingPolicy DirectoryNamespaceAssociation="None" ResourceNamePolicy="FileFormatDefault" />
-        </Policies>
-      </Properties>
-    </MonoDevelop>
-  </ProjectExtensions>
   <ItemGroup>
-    <Folder Include="Io\" />
-    <Folder Include="Io\buffer\" />
+    <ProjectReference Include="..\Axum\Axum.csproj">
+      <Project>{4D5FACE8-CB29-4CEC-AECC-460A1B4C0708}</Project>
+      <Name>Axum</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

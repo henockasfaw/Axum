@@ -3,16 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axum", "Axum\Axum.csproj", "{4D5FACE8-CB29-4CEC-AECC-460A1B4C0708}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{72CCEE52-F605-4124-8C6B-09544E28577A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Default|Any CPU = Default|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4D5FACE8-CB29-4CEC-AECC-460A1B4C0708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D5FACE8-CB29-4CEC-AECC-460A1B4C0708}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D5FACE8-CB29-4CEC-AECC-460A1B4C0708}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D5FACE8-CB29-4CEC-AECC-460A1B4C0708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72CCEE52-F605-4124-8C6B-09544E28577A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72CCEE52-F605-4124-8C6B-09544E28577A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72CCEE52-F605-4124-8C6B-09544E28577A}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{72CCEE52-F605-4124-8C6B-09544E28577A}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{72CCEE52-F605-4124-8C6B-09544E28577A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72CCEE52-F605-4124-8C6B-09544E28577A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Axum\Axum.csproj
