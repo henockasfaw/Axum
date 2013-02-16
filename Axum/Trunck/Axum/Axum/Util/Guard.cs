@@ -1,7 +1,7 @@
 using System;
 using Axum.Exception;
 
-namespace Axum
+namespace Axum.Util
 {
     public static class Guard
     {
@@ -12,6 +12,15 @@ namespace Axum
                 throw new ArgumentException(message);
             }
         }
+
+        public static void LessThanOrEqualToZero(int number, string message)
+        {
+            if (number <= 0)
+            {
+                throw new ArgumentException(message);
+            }
+        }
+
 
         public static void OutOfBufferRange(int refCnt) 
         {

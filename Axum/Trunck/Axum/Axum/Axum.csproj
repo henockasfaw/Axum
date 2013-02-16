@@ -34,7 +34,6 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Exception\IllegalBufferAccessException.cs" />
-    <Compile Include="Guard.cs" />
     <Compile Include="Io\Buffer\AbstractMessageBuf.cs" />
     <Compile Include="Io\Buffer\BufType.cs" />
     <Compile Include="Io\Buffer\ByteBuf.cs" />
@@ -45,11 +44,13 @@
     <Compile Include="Io\Buffer\IGatheringByteChannel.cs" />
     <Compile Include="Io\Buffer\IMessageBuf.cs" />
     <Compile Include="Io\Buffer\InputStream.cs" />
-    <Compile Include="Io\Buffer\IQueue.cs" />
     <Compile Include="Io\Buffer\IReferenceCounted.cs" />
     <Compile Include="Io\Buffer\IScatteringByteChannel.cs" />
     <Compile Include="Io\Buffer\OutputStream.cs" />
     <Compile Include="Io\Buffer\Unpooled.cs" />
+    <Compile Include="Util\CustomQueue.cs" />
+    <Compile Include="Util\Guard.cs" />
+    <Compile Include="Util\ICustomQueue.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

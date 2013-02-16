@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Axum.Util;
 
 namespace Axum.Io.Buffer
 {
-    public interface IMessageBuf<T> :IQueue<T>,IBuf
+    public interface IMessageBuf<T> :ICustomQueue<T>,IBuf
     {
         bool UnfoldAndAdd(Object o);
         //TODO:we have to figure out the conversion from (Collection<? super T> c to c# 
