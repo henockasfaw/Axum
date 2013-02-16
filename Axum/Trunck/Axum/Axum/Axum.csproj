@@ -33,6 +33,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Io\Buffer\AbstractMessageBuf.cs" />
+    <Compile Include="Io\Buffer\BufType.cs" />
+    <Compile Include="Io\Buffer\ByteBuf.cs" />
+    <Compile Include="Io\Buffer\ByteBuffer.cs" />
+    <Compile Include="Io\Buffer\ByteOrder.cs" />
+    <Compile Include="Io\Buffer\IBuf.cs" />
+    <Compile Include="Io\Buffer\IByteBufAllocator.cs" />
+    <Compile Include="Io\Buffer\IGatheringByteChannel.cs" />
+    <Compile Include="Io\Buffer\IMessageBuf.cs" />
+    <Compile Include="Io\Buffer\InputStream.cs" />
+    <Compile Include="Io\Buffer\IQueue.cs" />
+    <Compile Include="Io\Buffer\IReferenceCounted.cs" />
+    <Compile Include="Io\Buffer\IScatteringByteChannel.cs" />
+    <Compile Include="Io\Buffer\OutputStream.cs" />
     <Compile Include="Io\Buffer\Unpooled.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

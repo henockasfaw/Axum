@@ -48,6 +48,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractMessageBufTests.cs" />
     <Compile Include="UnpooledTests.cs" />
   </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@
     {
         int Capacity();
         IByteBuf Capacity(int newCapacity);
-        int MaxCapacity();
+        int  MaxCapacity();
         IByteBufAllocator Alloc();
         IByteBuf Order();
         IByteBuf Order(ByteOrder endiannes);
