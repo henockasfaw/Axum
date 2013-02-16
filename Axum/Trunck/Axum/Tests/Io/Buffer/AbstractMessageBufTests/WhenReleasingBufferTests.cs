@@ -3,7 +3,7 @@ using Axum.Exception;
 using NUnit.Framework;
 using Tests.Fake;
 
-namespace Tests.Io.Buffer
+namespace Tests.Io.Buffer.AbstractMessageBufTests
 {
     [TestFixture]
     public class WhenReleasingBufferTests

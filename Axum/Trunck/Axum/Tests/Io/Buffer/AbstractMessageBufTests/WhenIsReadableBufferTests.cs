@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using Tests.Fake;
 
-namespace Tests
+namespace Tests.Io.Buffer.AbstractMessageBufTests
 {
     [TestFixture]
     public class WhenIsReadableBufferTests
