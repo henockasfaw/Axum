@@ -48,12 +48,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Io\Buffer\WhenIsReadableBufferTests.cs" />
-    <Compile Include="Io\Buffer\WhenIsWritaeBufferTests.cs" />
-    <Compile Include="Io\Buffer\WhenReleasingBufferTests.cs" />
+    <Compile Include="Io\Buffer\AbstractMessageBufTests\WhenIsReadableBufferTests.cs" />
+    <Compile Include="Io\Buffer\AbstractMessageBufTests\WhenIsWritaeBufferTests.cs" />
+    <Compile Include="Io\Buffer\AbstractMessageBufTests\WhenReleasingBufferTests.cs" />
     <Compile Include="Fake\FakeAbstractMessageBuf.cs" />
-    <Compile Include="Io\Buffer\WhenConstructorInitialized.cs" />
-    <Compile Include="Io\Buffer\WhenRetainBufferTests.cs" />
+    <Compile Include="Io\Buffer\AbstractMessageBufTests\WhenConstructorInitialized.cs" />
+    <Compile Include="Io\Buffer\AbstractMessageBufTests\WhenRetainBufferTests.cs" />
+    <Compile Include="Io\Buffer\DefaultMessageBufTests\ConstructerTest.cs" />
     <Compile Include="UnpooledTests.cs" />
   </ItemGroup>
+  <ItemGroup />
 </Project>

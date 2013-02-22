@@ -6,7 +6,7 @@ namespace Tests.Io.Buffer.AbstractMessageBufTests
 {
     [TestFixture]
     public class WhenConstructorInitialized
-    {
+    {             
         [Test]
         public void SettingMaxCapcityAboveOrEqualToZeroAndInitConstructor()
         {

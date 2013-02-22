@@ -9,6 +9,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Axum</RootNamespace>
     <AssemblyName>Axum</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -19,6 +21,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -27,6 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -39,6 +43,7 @@
     <Compile Include="Io\Buffer\ByteBuf.cs" />
     <Compile Include="Io\Buffer\ByteBuffer.cs" />
     <Compile Include="Io\Buffer\ByteOrder.cs" />
+    <Compile Include="Io\Buffer\DefaultMessageBuf.cs" />
     <Compile Include="Io\Buffer\IBuf.cs" />
     <Compile Include="Io\Buffer\IByteBufAllocator.cs" />
     <Compile Include="Io\Buffer\IGatheringByteChannel.cs" />

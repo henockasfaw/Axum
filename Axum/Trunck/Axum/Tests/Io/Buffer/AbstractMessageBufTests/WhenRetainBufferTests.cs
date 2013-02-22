@@ -1,4 +1,5 @@
-﻿using Axum.Io.Buffer;
+﻿using System;
+using Axum.Io.Buffer;
 using NUnit.Framework;
 using Tests.Fake;
 
@@ -39,6 +40,10 @@ namespace Tests.Io.Buffer.AbstractMessageBufTests
         [ExpectedException]
         public void RetainShouldGuardOutRangeBufferValues()
         {
+            int MIN_INITIAL_CAPACITY = 8;
+            Console.WriteLine("0x{0:x}", MIN_INITIAL_CAPACITY);
+            Console.WriteLine("0x{0:x}", MIN_INITIAL_CAPACITY << 1);
+
             _abstractMessageBuf.Retain(100).Retain(int.MaxValue);
         } 
     }
